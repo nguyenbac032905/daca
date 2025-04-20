@@ -165,7 +165,7 @@
                     </div>
                     <div class="inner-content" id="inner-content"></div>
                 </div>
-                <div class="more button3"><a href="">Mua Hàng</a></div>
+                <div class="more button3"><a href="/banhang.html">Mua Hàng</a></div>
             </div>
          </div>
         <!-- topgiaodien -->
@@ -179,7 +179,7 @@
                     </div>
                     <div class="inner-content" id="new"></div>
                 </div>
-                <div class="more button3"><a href="">Mua Hàng</a></div>
+                <div class="more button3"><a href="/banhang.html">Mua Hàng</a></div>
             </div>
           </div>
          <!-- giaodienmoi -->
@@ -430,11 +430,12 @@
         </div>
         <script>
             // topgiaodien
-            fetch("http://localhost:3000/top")
+            fetch("https://daca-62l9.vercel.app/database.json")
                 .then(response => response.json())
                 .then(data => {
+                    console.log(data)
                  let htmls="";
-                 data.forEach(item=> {
+                 data.top.forEach(item=> {
                     htmls+= `
                     <div class="inner-box">
                         <a href="${item.link}" target="_blank">
@@ -452,11 +453,11 @@
                 })
             // endtopgiaodien
             //new
-            fetch("http://localhost:3000/new")
+            fetch("https://daca-62l9.vercel.app/database.json")
                 .then(response => response.json())
                 .then(data => {
                     let htmls="";
-                    data.forEach( item => {
+                    data.new.forEach( item => {
                         htmls += `
                         <div class="inner-box">
                             <a href="${item.link}" target="_blank">
