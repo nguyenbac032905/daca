@@ -1,6 +1,6 @@
 import { params } from "./params.js";
 
-const api = "http://localhost:3000/khogiaodien";
+const api = "https://daca-62l9.vercel.app/database.json";
 
 export const drawProduct = () => {
   const apiProduct = `${api}?q=${params.q}&_sort=${params.sort}&_order=${params.order}&_page=${params.page}&_limit=${params.limit}`;
