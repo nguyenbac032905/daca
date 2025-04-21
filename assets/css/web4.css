@@ -36,6 +36,22 @@
     width: 100%;
     height: auto;
 }
+@media (max-width:767.98px) {
+    .logo1 .inner-wrap{
+        flex-wrap: wrap;
+    }
+    .logo1 .inner-wrap .inner-content{
+        width: 100%;
+    }
+    .logo1 .inner-wrap .inner-image{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .logo1 .inner-wrap .inner-content h2{
+        text-align: center;
+        font-size: 35px;
+    }
+}
 /* logo2 */
 .logo2{
     margin: 80px 0;
@@ -81,10 +97,7 @@
     overflow: hidden;
     margin-bottom: 30px;
 }
-.logo2 .inner-wrap .inner-content .inner-box:nth-child(4){
-    margin-right: 0;
-}
-.logo2 .inner-wrap .inner-content .inner-box:nth-child(8){
+.logo2 .inner-wrap .inner-content .inner-box:nth-child(4n){
     margin-right: 0;
 }
 .logo2 .inner-wrap .inner-content .inner-box::after{
@@ -184,6 +197,12 @@
     display: flex;
     justify-content: center;
 }
+@media (max-width:767.98px) {
+    .logo2 .inner-wrap .inner-box:nth-child(2n){
+        margin-right: 0;
+    }
+    
+}
 /* logo3 */
 .logo3{
     background: linear-gradient(to bottom, #f6f6f6 50%, #ffffff 50%);
@@ -247,6 +266,24 @@
 .logo3 .inner-wrap .inner-content .inner-box .inner-footer{
     display: flex;
     justify-content: center;
+}
+@media (max-width:991.98px) {
+    .logo3 .inner-wrap .inner-content .inner-box{
+        width: calc(100%/2 - 30px/2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .logo3 .inner-wrap .inner-content .inner-box:nth-child(2n){
+        margin-right: 0;
+    }
+    
+}
+@media (max-width:767.98px) {
+    .logo3 .inner-wrap .inner-content .inner-box{
+        width: 100%;
+        margin-right: 0;
+    }
+    
 }
 /* logo4 */
 .logo4{
@@ -346,7 +383,23 @@
     justify-content: center;
     margin-bottom: 50px;
 }
+@media (max-width:991.98px) {
+    .logo4 .inner-content .inner-box{
+        width: calc(100%/2 - 30px/2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .logo4 .inner-content .inner-box:nth-child(2n){
+        margin-right: 0;
+    }
+    
+}
 /* logo5 */
+@media (max-width:767.98px) {
+    .logo5 .inner-head .inner-title{
+        font-size: 25px;
+    }
+}
 .logo5{
     margin: 50px;
 }

@@ -84,4 +84,33 @@
     color: var(--color-1);
 }
 
+@media (max-width: 991.98px) {
+    .topgiaodien .inner-wrap .inner-content .inner-box {
+        width: calc(100%/3 - 60px/3);
+    }
+    .topgiaodien .inner-wrap .inner-content .inner-box:nth-child(4n){
+        margin-right: 30px;
+    }
+    .topgiaodien .inner-wrap .inner-content .inner-box:nth-child(3n){
+        margin-right: 0;
+    }
+    
+}
+@media (max-width: 767.98px) {
+    .topgiaodien .inner-wrap .inner-content .inner-box {
+        width: calc(100%/2 - 30px/2);
+    }
+    .topgiaodien .inner-wrap .inner-content .inner-box:nth-child(3n){
+        margin-right: 30px;
+    }
+    .topgiaodien .inner-wrap .inner-content .inner-box:nth-child(2n){
+        margin-right: 0;
+    }
+    
+}
+@media (max-width: 767.98px) {
+    .logo5 .inner-head .inner-title{
+        font-size: 25px;
+    }
+}
 
