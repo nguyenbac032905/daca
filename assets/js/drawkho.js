@@ -19,11 +19,7 @@ export const drawProduct = () => {
                             <p>Giá: ${item.price}</p>
                             <a href="${item.link}" target="_blank">Chi Tiết</a>
                         </div>
-                        <div class="them"><a href="http://127.0.0.1:5500/Project-Daca/thanhtoan.html" target="_blank" class="buy-btn"
-                        data-title="${item.title}"
-                        data-price="${item.price}"
-                        data-image="${item.image}"
-                        data-link="${item.link}">Mua Hàng</a></div>    
+                        <div class="them"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div>    
                     </div>
                     `;
       });
