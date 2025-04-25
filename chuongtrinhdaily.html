@@ -13,6 +13,25 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .cangiua{
+            display: flex;
+            justify-content: center;
+        }
+        table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+thead th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
         .section5{
             margin: 80px 0;
         }
@@ -54,6 +73,34 @@
             color: rgba(0, 0, 0, 0.792);
             margin-bottom: 10px;
         }
+        @media (max-width: 991.98px) {
+    .section5 .inner-wrap {
+        flex-direction: column; 
+    }
+
+    .section5 .inner-wrap .inner-image {
+        width: 100%;
+        margin-right: 0; 
+        margin-bottom: 30px; 
+        margin: 0 auto;
+    }
+    .section5 .inner-wrap .inner-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section5 .inner-wrap .inner-content .inner-box {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .section5 .inner-wrap .inner-content .inner-box .title {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    }
         .class-1 {
     cursor: auto;
     margin:0px;
@@ -536,6 +583,7 @@
     box-sizing:border-box;
     
 }
+
 .class-44 {
     flex:0 0 100%;
     max-width:100%;
@@ -565,6 +613,7 @@
     box-sizing:border-box;
     
 }
+
 .class-47 {
     font-size:38px;
     font-weight:600;
@@ -588,6 +637,15 @@
     font-weight:700;
     box-sizing:border-box;
     
+}
+@media (max-width: 991px) {
+    .class-45 {
+        padding: 45px 0 500px;
+        background-position: right bottom;
+    }
+    .agency-intro__content {
+        text-align: center;
+    }
 }
 .class-50 {
     font-size:20px;
@@ -2013,11 +2071,7 @@
         <div class="container">
             <div class="inner-wrap">
                 <div class="inner-logo">
-                    <a href="/"><img src="./assets/image/logo2.jpg" alt=""></a>
-                    <div class="inner-content">
-                        <h2>TWA</h2>
-                        <p>Trendy Web Affordable</p>
-                    </div>
+                    <a href="/"><img src="./assets/image/logo.svg" alt=""></a>
                 </div>
                 <div class="inner-menu">
                     <ul>
@@ -2103,7 +2157,7 @@
             </li>
         </ul>
         <div class="inner-logo">
-            <img src="./assets/image/logo2.jpg" alt="">
+            <img src="./assets/image/logo.svg" alt="">
         </div>
         <div class="buttonClose" id="buttonClose"><i class="fa-solid fa-xmark"></i></div>
     </div>
@@ -2144,7 +2198,8 @@
                                 <div class="class-7">
                                     <h1 class="class-47">Gia tăng doanh thu bán hàng</h1>
                                     <p class="class-48">Khi trở thành cộng tác viên bán hàng Daca để nhận hoa hồng tới</p>
-                                    <p class="class-48"><strong class="class-49">50% giá trị đơn hàng cùng hoa hồng hấp dẫn</strong></p><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button>
+                                    <p class="class-48"><strong class="class-49">50% giá trị đơn hàng cùng hoa hồng hấp dẫn</strong></p>
+                                    <button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button>
                                 </div>
                             </div>
                         </div>
@@ -2190,7 +2245,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button>
+                        <div class="cangiua"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div>
                     </div>
                 </div>
             </div>
@@ -2302,7 +2357,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="class-62"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div>
+                        <div class="class-62"><div class="cangiua"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div></div>
                     </div>
                 </div>
             </div>
@@ -2351,7 +2406,7 @@
                         <div class="class-89">
                             <div nh-lazy="image-background" style="background-image: url(&quot;https://cdn.daca.vn/media/background/bg-form-contact-info.jpg&quot;);" class="class-90">
                                 <div class="class-91">Bạn cần tư vấn thêm về chương trình đại lý</div><a href="tel:0868 219 908" class="class-92">Hotline: 0868 219 908</a>
-                                <div class="class-93">hoặc</div><a href="mailto:contact@daca.vn" class="class-94">Email: contact@daca.vn</a>
+                                <div class="class-93">hoặc</div><a href="mailto:contact@daca.vn" class="class-94">Email:b@gmail.com</a>
                             </div>
                             <div class="class-95">
                                 <div class="class-96">Đăng ký tham gia chương trình Đại lý bán hàng với Daca</div>
@@ -2360,7 +2415,7 @@
                                     <div class="class-97"><input required="" maxlength="11" data-msg="Vui lòng nhập số điện thoại" data-rule-phonevn="" data-msg-phonevn="Số điện thoại chưa chính xác" name="phone" type="text" placeholder="Số điện thoại *" class="class-98"></div>
                                     <div class="class-97"><input name="email" placeholder="Email" type="email" class="class-98"></div>
                                     <div class="class-99">
-                                        <div class="class-97"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div>
+                                        <div class="class-97"><div class="cangiua"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div></div>
                                     </div>
                                 </form>
                             </div>
@@ -2391,7 +2446,7 @@
                                             <div class="class-97"><input required="" data-rule-number="false" data-msg-number="Vui lòng nhập đúng định dạng" data-msg="Vui lòng nhập thông tin" data-rule-maxlength="50" data-msg-maxlength="Thông tin nhập quá dài" name="full_name" placeholder="Họ và tên *" type="text" class="class-109"></div>
                                             <div class="class-97"><input required="" maxlength="11" data-msg="Vui lòng nhập số điện thoại" data-rule-phonevn="" data-msg-phonevn="Số điện thoại chưa chính xác" name="phone" type="text" placeholder="Số điện thoại *" class="class-109"></div>
                                             <div class="class-97"><input name="email" placeholder="Email" type="email" class="class-109"></div>
-                                            <div class="class-97"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div>
+                                            <div class="class-97"><div class="cangiua"><button type="button" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" id="buttonHeader">Tư Vấn Ngay</button></div></div>
                                         </form>
                                     </div>
                                 </div>
